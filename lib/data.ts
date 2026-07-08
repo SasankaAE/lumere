@@ -3,7 +3,7 @@ export const products = [
     id: "01",
     name: "Bio-Renew Serum",
     tagline: "Overnight cellular repair",
-    price: "$128",
+    price: "LKR 2500",
     volume: "30ml",
     image: "/images/Bio-Renew Serum.jpg",
     description:
@@ -14,7 +14,7 @@ export const products = [
     id: "02",
     name: "Cloud Barrier Cream",
     tagline: "48-hour moisture lock",
-    price: "$98",
+    price: "LKR 2000",
     volume: "50ml",
     image: "/images/Cloud-Barrier-Cream.jpg",
     description:
@@ -25,7 +25,7 @@ export const products = [
     id: "03",
     name: "Dew Drop Essence",
     tagline: "Instant luminosity",
-    price: "$76",
+    price: "LKR 1500",
     volume: "120ml",
     image: "/images/Dewdrop-Essence.jpg",
     description:
@@ -36,7 +36,7 @@ export const products = [
     id: "04",
     name: "Botanical Cleansing Oil",
     tagline: "Gentle daily reset",
-    price: "$54",
+    price: "LKR 1000",
     volume: "150ml",
     image: "/images/Botanical-Cleansing-Oil.jpg",
     description:
