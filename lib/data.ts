@@ -199,7 +199,7 @@ export const instagramPosts = [
   { image: "/images/inst3.jpg", likes: "3,104" },
   { image: "/images/inst4.jpg", likes: "1,558" },
   { image: "/images/inst5.jpg", likes: "2,760" },
-  { image: "/images/inst5.jpg", likes: "4,215" },
+  { image: "/images/inst6.jpg", likes: "4,215" },
 ] as const;
 
 export const navLinks = [
