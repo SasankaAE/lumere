@@ -5,8 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { MoveHorizontal } from "lucide-react";
 import { Reveal } from "@/components/motion/reveal";
-import skinBefore from "public/images/skin-before.png";
-import skinAfter from "public/images/skin-after.jpg";
 
 export function BeforeAfter() {
   const [position, setPosition] = useState(50);
@@ -50,7 +48,7 @@ export function BeforeAfter() {
             onTouchMove={(e) => updateFromClientX(e.touches[0].clientX)}
           >
             <Image
-              src={skinBefore}
+              src="/images/skin-before.png"
               alt="Skin after four weeks of consistent LUMÈRE use, showing improved texture and tone"
               fill
               sizes="(max-width: 768px) 90vw, 720px"
@@ -61,7 +59,7 @@ export function BeforeAfter() {
               style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
             >
               <Image
-                src={skinAfter}
+                src="/images/skin-after.jpg"
                 alt="Skin after four weeks of consistent LUMÈRE use, showing improved texture and tone"
                 fill
                 sizes="(max-width: 768px) 90vw, 720px"

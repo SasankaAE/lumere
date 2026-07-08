@@ -7,7 +7,7 @@ import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import heroImage from 'public/images/young-woman.jpg'
+import heroImage from '/public/images/young-woman.jpg'
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);

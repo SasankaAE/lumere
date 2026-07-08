@@ -80,7 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
       <head>
-        <link rel="icon" type="image/png" href="/images/L.png"/>
+        <link rel="icon" type="image/png" href="images/L.png"/>
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger

@@ -3,7 +3,7 @@ export const products = [
     id: "01",
     name: "Bio-Renew Serum",
     tagline: "Overnight cellular repair",
-    price: "LKR 2500",
+    price: "$128",
     volume: "30ml",
     image: "/images/Bio-Renew Serum.jpg",
     description:
@@ -14,7 +14,7 @@ export const products = [
     id: "02",
     name: "Cloud Barrier Cream",
     tagline: "48-hour moisture lock",
-    price: "LKR 3000",
+    price: "$98",
     volume: "50ml",
     image: "/images/Cloud-Barrier-Cream.jpg",
     description:
@@ -25,7 +25,7 @@ export const products = [
     id: "03",
     name: "Dew Drop Essence",
     tagline: "Instant luminosity",
-    price: "LKR 2800",
+    price: "$76",
     volume: "120ml",
     image: "/images/Dewdrop-Essence.jpg",
     description:
@@ -36,7 +36,7 @@ export const products = [
     id: "04",
     name: "Botanical Cleansing Oil",
     tagline: "Gentle daily reset",
-    price: "LKR 1500",
+    price: "$54",
     volume: "150ml",
     image: "/images/Botanical-Cleansing-Oil.jpg",
     description:
@@ -199,7 +199,7 @@ export const instagramPosts = [
   { image: "/images/inst3.jpg", likes: "3,104" },
   { image: "/images/inst4.jpg", likes: "1,558" },
   { image: "/images/inst5.jpg", likes: "2,760" },
-  { image: "/images/inst6.jpg", likes: "4,215" },
+  { image: "/images/inst5.jpg", likes: "4,215" },
 ] as const;
 
 export const navLinks = [
