@@ -189,7 +189,7 @@ export const faqs = [
   {
     question: "Are your ingredients cruelty-free?",
     answer:
-      "LUMÈRE is certified cruelty-free by Leaping Bunny and never tests on animals at any stage of formulation or production.",
+      "AURELIA is certified cruelty-free by Leaping Bunny and never tests on animals at any stage of formulation or production.",
   },
 ] as const;
 
