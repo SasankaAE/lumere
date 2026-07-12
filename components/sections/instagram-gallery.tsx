@@ -11,7 +11,7 @@ export function InstagramGallery() {
     <section className="relative py-24 sm:py-32" aria-label="Instagram gallery">
       <div className="container-lux">
         <Reveal className="mb-14 flex flex-col items-center gap-3 text-center">
-          <p className="eyebrow">@lumereskincare</p>
+          <p className="eyebrow">@eudoraskincare</p>
           <h2 className="text-balance font-display text-4xl font-light leading-tight sm:text-5xl">
             Join the ritual, tag your glow.
           </h2>

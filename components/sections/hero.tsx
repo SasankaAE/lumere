@@ -7,7 +7,7 @@ import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import heroImage from '/public/images/young-woman.jpg'
+import heroImage from "/public/images/young-woman.jpg";
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -87,7 +87,7 @@ export function Hero() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="eyebrow mb-6"
           >
-            Bioactive Botanical Skincare
+            Radiant skin, rooted in melanin
           </motion.p>
 
           <motion.h1
@@ -96,11 +96,11 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="text-balance font-display text-[13vw] font-light leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl"
           >
-            Skin, in its
+            Eudora,
             <br />
-            <span className="italic text-moss-deep">most fluent</span>
+            <span className="italic text-moss-deep">where melanin</span>
             <br />
-            state.
+            glows.
           </motion.h1>
 
           <motion.p
@@ -109,9 +109,10 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="mt-7 max-w-md text-lg leading-relaxed text-ink-soft"
           >
-            Clinical-grade actives, drawn from rare botanicals and formulated
-            in small batches. A four-step ritual built for skin that changes
-            with you.
+            Formulated to work with deeper skin tones, not around them. Every
+            product pairs potent, research-backed ingredients with nourishing
+            botanicals in a simple daily ritual — made to even tone, deepen
+            hydration, and reveal the glow that's already yours.
           </motion.p>
 
           <motion.div
@@ -155,12 +156,14 @@ export function Hero() {
               fill
               priority
               sizes="(max-width: 768px) 90vw, 480px"
-              className="object-cover"
+              className="object-fill"
             />
             <div className="glass absolute bottom-6 left-6 right-6 flex items-center justify-between rounded-lg px-5 py-4">
               <div>
                 <p className="font-display text-lg">Healthy Skin Starts Here</p>
-                <p className="text-xs text-ink-soft">Radiant • Hydrated • Naturally Glowing</p>
+                <p className="text-xs text-ink-soft">
+                  Radiant • Hydrated • Naturally Glowing
+                </p>
               </div>
               <Button size="sm" variant="light">
                 Explore

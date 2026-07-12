@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  /* ---- Color tokens ---- */
-  --color-bone: #f7f4ee;
-  --color-bone-dark: #efe9e0;
-  --color-linen: #eee7dc;
-  --color-ink: #29241f;
-  --color-ink-soft: #6b6259;
-  --color-ink-faint: #a39a8d;
-  --color-moss: #8c9a7d;
-  --color-moss-deep: #5c6b4e;
-  --color-moss-pale: #e3e7da;
-  --color-dew: #efc9bc;
-  --color-dew-deep: #d9a38f;
-  --color-dew-pale: #f8e6de;
-  --color-gold: #c2a05f;
+  /* ---- Color tokens (violet / champagne-gold palette) ---- */
+  --color-bone: #f7f7fa;
+  --color-bone-dark: #f0eff4;
+  --color-linen: #ecebf2;
+  --color-ink: #2b1e59;
+  --color-ink-soft: #6f668e;
+  --color-ink-faint: #aeaac0;
+  --color-moss: #5c4f8c;
+  --color-moss-deep: #372773;
+  --color-moss-pale: #e8e7ef;
+  --color-dew: #d9ce9a;
+  --color-dew-deep: #9c946f;
+  --color-dew-pale: #eee9d2;
+  --color-gold: #d9ce9a;
   --color-white: #ffffff;
 
   /* ---- Fonts ---- */
@@ -29,8 +29,8 @@
   --radius-full: 999px;
 
   /* ---- Shadows ---- */
-  --shadow-soft: 0 8px 30px rgba(41, 36, 31, 0.06);
-  --shadow-lift: 0 20px 60px rgba(41, 36, 31, 0.12);
+  --shadow-soft: 0 8px 30px rgba(43, 30, 89, 0.08);
+  --shadow-lift: 0 20px 60px rgba(43, 30, 89, 0.16);
 
   /* ---- Easing ---- */
   --ease-lux: cubic-bezier(0.16, 1, 0.3, 1);

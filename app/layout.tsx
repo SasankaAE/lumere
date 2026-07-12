@@ -22,8 +22,8 @@ const siteUrl = "https://lumere-skincare.example.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Aurelia",
-    template: "%s | Aurelia",
+    default: "EUDORA",
+    template: "%s | EUDORA",
   },
   description:
     "LUMÈRE is bioactive botanical skincare formulated with clinical-grade actives and rare plant extracts. Discover the ritual behind luminous, resilient skin.",
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
     "botanical skincare",
     "clean beauty",
     "skincare routine",
-    "Aurelia",
+    "EUDORA",
     "serum",
     "facial oil",
   ],
-  authors: [{ name: "Aurelia" }],
+  authors: [{ name: "EUDORA" }],
   openGraph: {
     type: "website",
     url: siteUrl,
-    siteName: "Aurelia",
-    title: "Aurelia — Bioactive Botanical Skincare",
+    siteName: "EUDORA",
+    title: "EUDORA — Bioactive Botanical Skincare",
     description:
       "Clinical-grade actives. Rare botanicals. A ritual for luminous, resilient skin.",
     images: [{ url: "/images/hero-serum.jpg", width: 1200, height: 630, alt: "LUMÈRE skincare" }],
@@ -65,7 +65,7 @@ export const viewport: Viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Aurelia",
+  name: "EUDORA",
   url: siteUrl,
   logo: `${siteUrl}/images/L.png`,
   sameAs: [
@@ -80,7 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
       <head>
-        <link rel="icon" type="image/png" href="images/icon.png"/>
+        <link rel="icon" type="image/jpg" href="images/young-woman.jpg"/>
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
