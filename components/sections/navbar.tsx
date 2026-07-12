@@ -106,7 +106,7 @@ export function Navbar() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="mb-8 flex items-center justify-between">
-                <span className="font-display text-xl">LUMÈRE</span>
+                <span className="font-display text-xl">Aurelia</span>
                 <button
                   onClick={() => setOpen(false)}
                   aria-label="Close menu"
