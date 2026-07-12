@@ -1,7 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useMotionValueEvent,
+  useScroll,
+} from "framer-motion";
 import { Menu, ShoppingBag, X } from "lucide-react";
 import { navLinks } from "@/lib/data";
 import { Button } from "@/components/ui/button";
@@ -32,11 +37,16 @@ export function Navbar() {
       >
         <nav
           className={`flex items-center justify-between rounded-full px-5 py-3 transition-all duration-500 sm:px-6 ${
-            scrolled ? "glass shadow-soft" : "bg-transparent"
+            scrolled
+              ? "bg-bone/70 backdrop-blur-xl backdrop-saturate-150 shadow-soft"
+              : "bg-transparent backdrop-blur-0"
           }`}
           aria-label="Primary"
         >
-          <a href="#top" className="font-display text-xl tracking-tight sm:text-2xl">
+          <a
+            href="#top"
+            className="font-display text-xl tracking-tight sm:text-2xl"
+          >
             Aurelia
           </a>
 
@@ -54,7 +64,12 @@ export function Navbar() {
           </ul>
 
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex" aria-label="View cart, 0 items">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="hidden sm:inline-flex"
+              aria-label="View cart, 0 items"
+            >
               <ShoppingBag className="h-4 w-4" aria-hidden="true" />
               <span>0</span>
             </Button>
