@@ -47,7 +47,7 @@ export function Navbar() {
             href="#top"
             className="font-display text-xl tracking-tight sm:text-2xl"
           >
-            Aurelia
+            AURELIA
           </a>
 
           <ul className="hidden items-center gap-8 lg:flex">
@@ -106,7 +106,7 @@ export function Navbar() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="mb-8 flex items-center justify-between">
-                <span className="font-display text-xl">Aurelia</span>
+                <span className="font-display text-xl">AURELIA</span>
                 <button
                   onClick={() => setOpen(false)}
                   aria-label="Close menu"

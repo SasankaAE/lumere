@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-4 lg:grid-cols-5">
           <div className="col-span-2 lg:col-span-2">
             <a href="#top" className="font-display text-2xl">
-              Aurelia
+              AURELIA
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
               Bioactive botanical skincare, formulated in small batches for
@@ -63,7 +63,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-ink/10 pt-8 text-xs text-ink-faint sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Aurelia. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AURELIA. All rights reserved.</p>
           <p>Formulated and produced with care.</p>
         </div>
       </div>

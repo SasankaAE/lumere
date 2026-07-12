@@ -172,7 +172,7 @@ export const faqs = [
       "Most people notice a difference in texture and hydration within one to two weeks. Visible changes in fine lines and tone typically emerge around four to six weeks of consistent use.",
   },
   {
-    question: "Is LUMÈRE suitable for sensitive skin?",
+    question: "Is AURELIA suitable for sensitive skin?",
     answer:
       "Yes. Every formula is fragrance-free at the core, dermatologist-tested, and free of known irritants like alcohol denat, synthetic dyes, and essential oil blends.",
   },
