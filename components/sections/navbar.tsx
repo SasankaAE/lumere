@@ -37,7 +37,7 @@ export function Navbar() {
           aria-label="Primary"
         >
           <a href="#top" className="font-display text-xl tracking-tight sm:text-2xl">
-            LUMÈRE
+            Aurelia
           </a>
 
           <ul className="hidden items-center gap-8 lg:flex">

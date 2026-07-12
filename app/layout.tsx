@@ -22,8 +22,8 @@ const siteUrl = "https://lumere-skincare.example.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "LUMÈRE",
-    template: "%s | LUMÈRE",
+    default: "Aurelia",
+    template: "%s | Aurelia",
   },
   description:
     "LUMÈRE is bioactive botanical skincare formulated with clinical-grade actives and rare plant extracts. Discover the ritual behind luminous, resilient skin.",
@@ -32,23 +32,23 @@ export const metadata: Metadata = {
     "botanical skincare",
     "clean beauty",
     "skincare routine",
-    "LUMÈRE",
+    "Aurelia",
     "serum",
     "facial oil",
   ],
-  authors: [{ name: "LUMÈRE" }],
+  authors: [{ name: "Aurelia" }],
   openGraph: {
     type: "website",
     url: siteUrl,
-    siteName: "LUMÈRE",
-    title: "LUMÈRE — Bioactive Botanical Skincare",
+    siteName: "Aurelia",
+    title: "Aurelia — Bioactive Botanical Skincare",
     description:
       "Clinical-grade actives. Rare botanicals. A ritual for luminous, resilient skin.",
     images: [{ url: "/images/hero-serum.jpg", width: 1200, height: 630, alt: "LUMÈRE skincare" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LUMÈRE — Bioactive Botanical Skincare",
+    title: "Aurelia — Bioactive Botanical Skincare",
     description: "Clinical-grade actives. Rare botanicals. A ritual for luminous, resilient skin.",
     images: ["/images/hero-serum.jpg"],
   },
@@ -65,7 +65,7 @@ export const viewport: Viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "LUMÈRE",
+  name: "Aurelia",
   url: siteUrl,
   logo: `${siteUrl}/images/L.png`,
   sameAs: [
@@ -80,7 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
       <head>
-        <link rel="icon" type="image/png" href="images/L.png"/>
+        <link rel="icon" type="image/png" href="images/icon.png"/>
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
