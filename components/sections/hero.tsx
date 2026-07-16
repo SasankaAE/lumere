@@ -95,13 +95,15 @@ export function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="text-balance font-display text-[13vw] font-bold leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl italic text-moss-deep"
           >
+            Eudora
             <TypewriterEffect
               words={[
-                { text: "Eudora,", className:"font-bold" },
+                // { text: "Eudora,", className:"font-bold" },
                 { text: "where", className: "italic text-moss-deep" },
                 { text: "melanin", className: "italic text-moss-deep" },
-                { text: "glows.",},
+                { text: "glows.", className: "italic text-moss-deep"},
               ]}
               className="text-balance text-left font-display text-[13vw] font-light leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl"
               cursorClassName="h-[0.9em] w-[3px] bg-moss-deep"
