@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import heroImage from "/public/images/young-woman.jpg";
+import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -98,9 +99,15 @@ export function Hero() {
           >
             Eudora,
             <br />
-            <span className="italic text-moss-deep">where melanin</span>
-            <br />
-            glows.
+            <TypewriterEffectSmooth
+              words={[
+                { text: "where", className: "italic text-moss-deep" },
+                { text: "melanin", className: "italic text-moss-deep" },
+                { text: "glows.", className: "italic text-moss-deep" },
+              ]}
+              className="!text-[13vw] !font-light !leading-[0.98] !tracking-tight sm:!text-6xl lg:!text-7xl"
+              cursorClassName="bg-moss-deep"
+            />
           </motion.h1>
 
           <motion.p
