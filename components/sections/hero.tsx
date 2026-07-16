@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import heroImage from "/public/images/young-woman.jpg";
-import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
+import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -91,24 +91,22 @@ export function Hero() {
             Radiant skin, rooted in melanin
           </motion.p>
 
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-balance font-display text-[13vw] font-light leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl"
           >
-            Eudora,
-            <br />
-            <TypewriterEffectSmooth
+            <TypewriterEffect
               words={[
+                { text: "Eudora,", className:"font-bold" },
                 { text: "where", className: "italic text-moss-deep" },
                 { text: "melanin", className: "italic text-moss-deep" },
-                { text: "glows.", className: "italic text-moss-deep" },
+                { text: "glows.",},
               ]}
-              className="!text-[13vw] !font-light !leading-[0.98] !tracking-tight sm:!text-6xl lg:!text-7xl"
-              cursorClassName="bg-moss-deep"
+              className="text-balance text-left font-display text-[13vw] font-light leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl"
+              cursorClassName="h-[0.9em] w-[3px] bg-moss-deep"
             />
-          </motion.h1>
+          </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}

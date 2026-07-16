@@ -6,20 +6,20 @@
 
 @theme {
   /* ---- Color tokens (violet / champagne-gold palette) ---- */
-  --color-bone: #f5f0e6;
-  --color-bone-dark: #ede4d2;
-  --color-linen: #e8ddc7;
-  --color-ink: #2b1e59;
-  --color-ink-soft: #6f668e;
-  --color-ink-faint: #aeaac0;
-  --color-moss: #5c4f8c;
-  --color-moss-deep: #372773;
-  --color-moss-pale: #e8e7ef;
-  --color-dew: #d9ce9a;
-  --color-dew-deep: #9c946f;
-  --color-dew-pale: #eee9d2;
-  --color-gold: #d9ce9a;
-  --color-white: #ffffff;
+--color-bone: #f6f3fa;        /* soft lavender-white */
+--color-bone-dark: #ece5f5;   /* pale lilac */
+--color-linen: #e2d6f0;       /* light lavender */
+--color-ink: #2b1e59;         /* unchanged — deep purple */
+--color-ink-soft: #6f668e;    /* unchanged — muted purple-grey */
+--color-ink-faint: #aeaac0;   /* unchanged — pale purple-grey */
+--color-moss: #5c4f8c;        /* unchanged — medium purple */
+--color-moss-deep: #372773;   /* unchanged — deep violet */
+--color-moss-pale: #e8e7ef;   /* unchanged — pale purple */
+--color-dew: #b8a6e0;         /* soft periwinkle-purple, replaces gold tone */
+--color-dew-deep: #7a63a8;    /* deeper muted purple */
+--color-dew-pale: #ece4f7;    /* very light purple */
+--color-gold: #b8a6e0;        /* aliased to new dew tone for consistency */
+--color-white: #ffffff;       /* unchanged */
 
   /* ---- Fonts ---- */
   --font-display: "Fraunces", ui-serif, Georgia, serif;
