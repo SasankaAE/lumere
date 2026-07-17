@@ -205,8 +205,9 @@ export const instagramPosts = [
 export const navLinks = [
   { label: "Shop", href: "#products" },
   { label: "Benefits", href: "#benefits" },
-  { label: "Ingredients", href: "#ingredients" },
   { label: "Ritual", href: "#routine" },
   { label: "Reviews", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Compnay Profile", href: "/companyProfile" },
 ] as const;
