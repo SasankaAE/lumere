@@ -74,7 +74,7 @@ export function Navbar() {
               <ShoppingBag className="h-4 w-4" aria-hidden="true" />
               <span>0</span>
             </Button>
-            <Link href= "/shop">
+            <Link href= "/shop/skinCare">
             <Button size="sm" className="hidden sm:inline-flex">
               Shop Now
             </Button>
@@ -128,7 +128,7 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <Link href="/shop">
+              <Link href="/shop/skinCare">
                 <Button className="mt-8">Shop Now</Button>
               </Link>
             </motion.div>

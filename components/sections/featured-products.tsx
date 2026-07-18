@@ -6,6 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 import { products } from "@/lib/data";
 import { Reveal, RevealStagger, staggerItem } from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function FeaturedProducts() {
   return (
@@ -57,9 +58,11 @@ export function FeaturedProducts() {
                   transition={{ duration: 0.35 }}
                   className="absolute bottom-4 right-4"
                 >
+                  <Link href="/shop">
                   <Button size="sm" variant="light" aria-label={`Quick view ${product.name}`}>
                     <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                   </Button>
+                  </Link>
                 </motion.div>
               </div>
 

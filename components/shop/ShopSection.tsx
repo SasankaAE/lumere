@@ -9,11 +9,11 @@ import { PRODUCTS } from "@/lib/products";
 import { CATEGORIES, AGE_TIERS } from "@/lib/shop-meta";
 import type { CategoryKey, TierKey, OrderTabKey, Product, BagItem } from "@/lib/shop-types";
 
-import OrdersSection from "@/components/shop/OrdersSection";
-import CategorySelector from "@/components/shop/CategorySelector";
-import LifeStageSelector from "@/components/shop/LifeStageSelector";
-import ProductGrid from "@/components/shop/ProductGrid";
-import BagDrawer from "@/components/shop/BagDrawer";
+import OrdersSection from "./OrdersSection";
+import CategorySelector from "./CategorySelector";
+import LifeStageSelector from "./LifeStageSelector";
+import ProductGrid from "./ProductGrid";
+import BagDrawer from "./BagDrawer";
 
 export default function ShopSection() {
   const [orderTab, setOrderTab] = useState<OrderTabKey>("to-pay");
