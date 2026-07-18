@@ -2,7 +2,7 @@ import { Navbar } from "@/components/sections/navbar";
 import { Hero } from "@/components/sections/hero";
 import { FeaturedProducts } from "@/components/sections/featured-products";
 import { Benefits } from "@/components/sections/benefits";
-import { Ingredients } from "@/components/sections/ingredients";
+import { Offers } from "@/components/sections/offers";
 import { Routine } from "@/components/sections/routine";
 import { BeforeAfter } from "@/components/sections/before-after";
 import { Testimonials } from "@/components/sections/testimonials";
@@ -19,7 +19,7 @@ export default function Home() {
         <Hero />
         <FeaturedProducts />
         <Benefits />
-        <Ingredients />
+        <Offers />
         <Routine />
         <BeforeAfter />
         <Testimonials />

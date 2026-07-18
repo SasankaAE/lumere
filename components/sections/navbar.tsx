@@ -10,6 +10,7 @@ import {
 import { Menu, ShoppingBag, X } from "lucide-react";
 import { navLinks } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -73,9 +74,11 @@ export function Navbar() {
               <ShoppingBag className="h-4 w-4" aria-hidden="true" />
               <span>0</span>
             </Button>
+            <Link href= "/shop">
             <Button size="sm" className="hidden sm:inline-flex">
               Shop Now
             </Button>
+            </Link>
             <button
               onClick={() => setOpen(true)}
               className="inline-flex h-10 w-10 items-center justify-center rounded-full lg:hidden"
@@ -125,7 +128,9 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <Button className="mt-8">Shop Now</Button>
+              <Link href="/shop">
+                <Button className="mt-8">Shop Now</Button>
+              </Link>
             </motion.div>
           </motion.div>
         )}

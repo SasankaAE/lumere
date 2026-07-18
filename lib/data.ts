@@ -76,30 +76,31 @@ export const benefits = [
   },
 ] as const;
 
-export const ingredients = [
+export const offers = [
   {
-    name: "Bakuchiol",
-    origin: "Psoralea corylifolia seed",
-    benefit: "A gentle retinol alternative that smooths texture without irritation.",
-    image: "/images/Bakuchiol.jpg",
+    name: "Welcome Voucher",
+    origin: "First-time customers",
+    benefit: "Get 15% off your first order with code WELCOME15 at checkout.",
+    image: "/images/Voucher.jpg",
   },
   {
-    name: "Centella Asiatica",
-    origin: "Wetland herb, Jeju Island",
-    benefit: "Calms visible redness and strengthens the skin's moisture barrier.",
-    image: "/images/Centella.jpg",
+    name: "Gift Pack Bundle",
+    origin: "Curated 4-piece set",
+    benefit: "Save 20% when you bundle four best-selling actives together.",
+    image: "/images/GiftPack.jpg",
   },
   {
-    name: "Squalane",
-    origin: "Sugarcane-derived",
-    benefit: "Mirrors skin's own lipids for weightless, non-comedogenic hydration.",
-    image: "/images/Squalane.jpg",
+    name: "Refer a Friend",
+    origin: "Loyalty rewards",
+    benefit:
+      "Earn a $10 credit for every friend who makes their first purchase.",
+    image: "/images/Referral.jpg",
   },
   {
-    name: "Niacinamide",
-    origin: "Vitamin B3 complex",
-    benefit: "Refines the look of pores and evens tone over sustained use.",
-    image: "/images/Niacinamide.jpg",
+    name: "Seasonal Discount",
+    origin: "Limited-time offer",
+    benefit: "Enjoy 25% off site-wide during our seasonal skincare edit.",
+    image: "/images/Seasonal.jpg",
   },
 ] as const;
 
@@ -205,6 +206,7 @@ export const instagramPosts = [
 export const navLinks = [
   { label: "Shop", href: "#products" },
   { label: "Benefits", href: "#benefits" },
+  { label: "Offers", href: "#offers" },
   { label: "Ritual", href: "#routine" },
   { label: "Reviews", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
