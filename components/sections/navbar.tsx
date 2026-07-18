@@ -46,7 +46,7 @@ export function Navbar() {
         >
           <a
             href="#top"
-            className="font-display text-xl tracking-tight sm:text-2xl"
+            className="font-display text-xl tracking-tight sm:text-2xl text-moss-deep"
           >
             EUDORA
           </a>

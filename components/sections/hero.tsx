@@ -129,10 +129,7 @@ export function Hero() {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <Button size="lg" asChild>
-              <a href="#products">Shop the Ritual</a>
-            </Button>
-            <Button size="lg" variant="secondary" asChild>
-              <a href="#ingredients">Explore Ingredients</a>
+              <a href="/shop">Shop the Ritual</a>
             </Button>
           </motion.div>
 
@@ -165,17 +162,6 @@ export function Hero() {
               sizes="(max-width: 768px) 90vw, 480px"
               className="object-fill"
             />
-            <div className="glass absolute bottom-6 left-6 right-6 flex items-center justify-between rounded-lg px-5 py-4">
-              <div>
-                <p className="font-display text-lg">Healthy Skin Starts Here</p>
-                <p className="text-xs text-ink-soft">
-                  Radiant • Hydrated • Naturally Glowing
-                </p>
-              </div>
-              <Button size="sm" variant="light">
-                Explore
-              </Button>
-            </div>
           </motion.div>
         </div>
       </div>
