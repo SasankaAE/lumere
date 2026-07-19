@@ -13,6 +13,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Sparkles, Droplets, Scissors, Footprints } from "lucide-react";
+import { PRODUCTS, type ProductKey } from "@/lib/products";
 
 /* ---------------------------------------------------------
    Design tokens
@@ -90,259 +91,6 @@ const TIERS = [
     focus: "Nourish & restore",
   },
 ];
-
-type CategoryId = (typeof CATEGORIES)[number]["id"];
-type TierId = (typeof TIERS)[number]["id"];
-type ProductKey = `${CategoryId}-${TierId}`;
-
-/* Each product's image points to a local file path following a
-   simple convention: /images/products/<slug-of-name>.jpg
-   Drop your real product photos into that folder using matching
-   filenames and they'll appear automatically — no other code
-   needs to change. Until a file exists at that path, the card
-   falls back to the on-brand monogram tile (see ProductImage). */
-interface SlugifyFn {
-  (name: string): string;
-}
-
-const slugify: SlugifyFn = (name) =>
-  name
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-
-const img = (name: string): string => `/images/products/${slugify(name)}.jpg`;
-
-const PRODUCTS: Record<
-  ProductKey,
-  { name: string; desc: string; price: number; image: string }[]
-> = {
-  "skin-teen": [
-    {
-      name: "Clear Bloom Cleanser",
-      desc: "Oil-balancing gel wash for breakout-prone skin.",
-      price: 18,
-      image: img("Clear Bloom Cleanser"),
-    },
-    {
-      name: "Matte Petal Toner",
-      desc: "Witch-hazel toner that refines pores without stripping.",
-      price: 16,
-      image: img("Matte Petal Toner"),
-    },
-  ],
-  "skin-divine": [
-    {
-      name: "Dew Drop Serum",
-      desc: "Hyaluronic serum for all-day plump hydration.",
-      price: 34,
-      image: img("Dew Drop Serum"),
-    },
-    {
-      name: "Glow Veil Moisturizer",
-      desc: "Lightweight cream for a natural, luminous finish.",
-      price: 29,
-      image: img("Glow Veil Moisturizer"),
-    },
-  ],
-  "skin-golden": [
-    {
-      name: "Renewal Nectar Serum",
-      desc: "Peptide serum that firms and softens fine lines.",
-      price: 48,
-      image: img("Renewal Nectar Serum"),
-    },
-    {
-      name: "Aura Lift Cream",
-      desc: "Rich night cream targeting early signs of aging.",
-      price: 52,
-      image: img("Aura Lift Cream"),
-    },
-  ],
-  "skin-timeless": [
-    {
-      name: "Silk Restore Elixir",
-      desc: "Deep-repair facial oil for mature, delicate skin.",
-      price: 64,
-      image: img("Silk Restore Elixir"),
-    },
-    {
-      name: "Grace Barrier Balm",
-      desc: "Ceramide-rich balm that rebuilds the skin barrier.",
-      price: 58,
-      image: img("Grace Barrier Balm"),
-    },
-  ],
-  "body-teen": [
-    {
-      name: "Fresh Bloom Body Wash",
-      desc: "Gentle citrus wash that keeps skin fresh, not dry.",
-      price: 14,
-      image: img("Fresh Bloom Body Wash"),
-    },
-    {
-      name: "Citrus Balance Lotion",
-      desc: "Fast-absorbing lotion for active, everyday days.",
-      price: 16,
-      image: img("Citrus Balance Lotion"),
-    },
-  ],
-  "body-divine": [
-    {
-      name: "Silk Bloom Body Butter",
-      desc: "Whipped butter that softens without feeling heavy.",
-      price: 26,
-      image: img("Silk Bloom Body Butter"),
-    },
-    {
-      name: "Radiance Body Oil",
-      desc: "Dry oil that leaves a soft, healthy sheen.",
-      price: 24,
-      image: img("Radiance Body Oil"),
-    },
-  ],
-  "body-golden": [
-    {
-      name: "Firming Gold Cream",
-      desc: "Elasticity-support cream for décolletage & body.",
-      price: 36,
-      image: img("Firming Gold Cream"),
-    },
-    {
-      name: "Contour Renewal Scrub",
-      desc: "Exfoliating scrub that smooths and refines texture.",
-      price: 30,
-      image: img("Contour Renewal Scrub"),
-    },
-  ],
-  "body-timeless": [
-    {
-      name: "Nourish Deep Balm",
-      desc: "Rich, slow-melt balm for very dry mature skin.",
-      price: 42,
-      image: img("Nourish Deep Balm"),
-    },
-    {
-      name: "Velvet Repair Butter",
-      desc: "Overnight butter for elbows, knees & heels.",
-      price: 40,
-      image: img("Velvet Repair Butter"),
-    },
-  ],
-  "hair-teen": [
-    {
-      name: "Clarity Shampoo",
-      desc: "Balances oily roots without drying the lengths.",
-      price: 15,
-      image: img("Clarity Shampoo"),
-    },
-    {
-      name: "Light Bloom Conditioner",
-      desc: "Weightless conditioner for fine, young hair.",
-      price: 15,
-      image: img("Light Bloom Conditioner"),
-    },
-  ],
-  "hair-divine": [
-    {
-      name: "Glow Shine Serum",
-      desc: "Frizz-taming serum with a glassy finish.",
-      price: 22,
-      image: img("Glow Shine Serum"),
-    },
-    {
-      name: "Hydra Bloom Mask",
-      desc: "Weekly mask for soft, bouncy strands.",
-      price: 26,
-      image: img("Hydra Bloom Mask"),
-    },
-  ],
-  "hair-golden": [
-    {
-      name: "Strength Renewal Oil",
-      desc: "Fortifying oil for thinning or brittle strands.",
-      price: 32,
-      image: img("Strength Renewal Oil"),
-    },
-    {
-      name: "Volume Revive Shampoo",
-      desc: "Builds body back into flattened, tired hair.",
-      price: 28,
-      image: img("Volume Revive Shampoo"),
-    },
-  ],
-  "hair-timeless": [
-    {
-      name: "Silver Grace Shampoo",
-      desc: "Brightens grey and silver tones, no yellowing.",
-      price: 34,
-      image: img("Silver Grace Shampoo"),
-    },
-    {
-      name: "Deep Restore Mask",
-      desc: "Intensive mask for dry, mature hair.",
-      price: 38,
-      image: img("Deep Restore Mask"),
-    },
-  ],
-  "foot-teen": [
-    {
-      name: "Fresh Step Scrub",
-      desc: "Light exfoliant for smooth, active feet.",
-      price: 12,
-      image: img("Fresh Step Scrub"),
-    },
-    {
-      name: "Cooling Foot Gel",
-      desc: "Refreshing gel for feet on the move.",
-      price: 13,
-      image: img("Cooling Foot Gel"),
-    },
-  ],
-  "foot-divine": [
-    {
-      name: "Soft Bloom Foot Cream",
-      desc: "Daily cream that keeps soles soft & smooth.",
-      price: 18,
-      image: img("Soft Bloom Foot Cream"),
-    },
-    {
-      name: "Silk Sole Balm",
-      desc: "Overnight balm for silky, cared-for feet.",
-      price: 19,
-      image: img("Silk Sole Balm"),
-    },
-  ],
-  "foot-golden": [
-    {
-      name: "Renewal Heel Butter",
-      desc: "Rich butter for hard-working, tired heels.",
-      price: 22,
-      image: img("Renewal Heel Butter"),
-    },
-    {
-      name: "Golden Sole Repair",
-      desc: "Repair cream for cracks and rough patches.",
-      price: 24,
-      image: img("Golden Sole Repair"),
-    },
-  ],
-  "foot-timeless": [
-    {
-      name: "Deep Comfort Balm",
-      desc: "Cushioning balm for sensitive mature skin.",
-      price: 26,
-      image: img("Deep Comfort Balm"),
-    },
-    {
-      name: "Timeless Sole Elixir",
-      desc: "Restorative oil blend for very dry feet.",
-      price: 28,
-      image: img("Timeless Sole Elixir"),
-    },
-  ],
-};
 
 function BloomMark({ stage, color, size = 22 }: { stage: number; color: string; size?: number }) {
   const petals = [0, 90, 180, 270];
@@ -471,7 +219,7 @@ export default function BeautyCategories() {
 
       {/* Main category tabs */}
       <Tabs value={category} onValueChange={setCategory} className="mb-8">
-        <TabsList className="h-auto w-full flex flex-wrap gap-2 bg-transparent p-0">
+        <TabsList className="h-auto w-full flex flex-wrap gap-2 bg-transparent p-0 mb-3">
           {CATEGORIES.map((c) => {
             const Icon = c.icon;
             const active = c.id === category;
@@ -564,6 +312,12 @@ export default function BeautyCategories() {
               </CardTitle>
               <CardDescription className="text-sm" style={{ color: "#6B5E52" }}>
                 {p.desc}
+              </CardDescription>
+              <CardDescription className="text-sm" style={{ color: "#6B5E52" }}>
+                {p.ingredients}
+              </CardDescription>
+              <CardDescription className="text-sm" style={{ color: "#6B5E52" }}>
+                {p.benefits}
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-0">
