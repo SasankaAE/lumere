@@ -5,10 +5,10 @@ export const products = [
     tagline: "Overnight cellular repair",
     price: "LKR 2500",
     volume: "30ml",
-    image: "/images/Bio-Renew Serum.jpg",
+    image: "/images/Eudora-Skin-Care.jpg",
     description:
       "A concentrated bakuchiol and peptide complex that renews skin while you sleep, softening fine lines by morning.",
-    tag: "Bestseller",
+    tag: "Eudora Skin Care",
   },
   {
     id: "02",
@@ -16,7 +16,7 @@ export const products = [
     tagline: "48-hour moisture lock",
     price: "LKR 2000",
     volume: "50ml",
-    image: "/images/Cloud-Barrier-Cream.jpg",
+    image: "/images/Eudora-Body-Care.jpg",
     description:
       "Ceramide-rich and whipped to a cloud finish, this cream rebuilds the skin barrier without a heavy after-feel.",
     tag: "New",
@@ -27,7 +27,7 @@ export const products = [
     tagline: "Instant luminosity",
     price: "LKR 1500",
     volume: "120ml",
-    image: "/images/Dewdrop-Essence.jpg",
+    image: "/images/Eudora-Hair-Care.jpg",
     description:
       "A featherlight essence of fermented rice and centella that preps skin to absorb everything applied after.",
     tag: "Editor's Pick",
@@ -38,7 +38,7 @@ export const products = [
     tagline: "Gentle daily reset",
     price: "LKR 1000",
     volume: "150ml",
-    image: "/images/Botanical-Cleansing-Oil.jpg",
+    image: "/images/Eudora-Foot-Care.jpg",
     description:
       "Camellia and marula oils dissolve makeup and SPF in seconds, rinsing clean without stripping the skin.",
     tag: "Cult Classic",
