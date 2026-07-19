@@ -329,14 +329,14 @@ export default function BeautyCategories() {
                 {activeTier.label}
               </Badge>
             </CardContent>
-            <CardFooter className="flex items-center justify-between pt-0">
-              <span className="font-serif text-xl" style={{ color: INK }}>
-                ${p.price}
+            <CardFooter className="flex items-center justify-between pt-0 ">
+              <span className="font-display text-xl mt-4" style={{ color: INK }}>
+                LKR {p.price}
               </span>
               <Button
                 size="sm"
                 style={{ background: INK, color: CREAM }}
-                className="rounded-full hover:opacity-90"
+                className="rounded-full hover:opacity-90 mt-4"
               >
                 Add to cart
               </Button>

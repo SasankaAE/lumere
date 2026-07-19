@@ -7,7 +7,7 @@ export interface Product {
   desc: string;
   ingredients: string;
   benefits: string;
-  price: number;
+  price: string;
   image: string;
 }
 
@@ -34,7 +34,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A gentle daily cleanser that clears without stripping",
       ingredients: "Ingredients: Salicylic acid (low %), Niacinamide, Aloe vera, Green tea extract, Vitamin B5 ",
       benefits: "Benefits: Clears excess oil and impurities, keeps pores clear, soothes redness without over-drying",
-      price: 18,
+      price: "990.00",
       image: img("Eudora Lumière Cleanser"),
     },
     {
@@ -42,7 +42,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A light toning mist to balance and prep skin.",
       ingredients: "Ingredients: Witch hazel (alcohol-free), Niacinamide, Aloe vera, Vitamin B3",
       benefits: "Benefits: Balances oil production, minimizes the look of pores, preps skin to absorb the next steps better.",
-      price: 16,
+      price: "670.00",
       image: img("Eudora Rosée Toner"),
     },
     {
@@ -50,7 +50,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A targeted serum for clarity and even tone.",
       ingredients: "Ingredients: Niacinamide, Vitamin C, Zinc PCA, Licorice root extract",
       benefits: "Benefits: Fades post-acne marks, brightens dull patches, controls shine, calms active breakouts",
-      price: 16,
+      price: "1000.00",
       image: img("Eudora Clarté Serum"),
     },
     {
@@ -58,7 +58,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A lightweight, oil-free daily moisturizer.",
       ingredients: "Ingredients: Hyaluronic acid, Vitamin E, Niacinamide, Centella asiatica, Ceramides",
       benefits: "Benefits: Deep hydration without heaviness, strengthens the skin barrier, calms irritation",
-      price: 16,
+      price: "950.00",
       image: img("Eudora Velours Moisturizer"),
     },
     {
@@ -66,7 +66,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Daily, invisible-finish sun protection.",
       ingredients: "Ingredients: Vitamin C, Vitamin E, Zinc oxide, Niacinamide, Hyaluronic acid",
       benefits: "Benefits: No white cast, protects against dark spots and sun damage, doubles as light hydration",
-      price: 16,
+      price: "1280.00",
       image: img("Eudora Éclat Suncream SPF 50"),
     },
     {
@@ -74,7 +74,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A nourishing daily lip balm.",
       ingredients: "Ingredients: Shea butter, Vitamin E, Hyaluronic acid, Sunflower seed oil",
       benefits: "Benefits: Softens and protects lips, locks in moisture, light natural sheen.",
-      price: 16,
+      price: "270.00",
       image: img("Eudora Baume Lip Balm"),
     },
   ],
@@ -84,7 +84,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A deeper daily cleanser with light exfoliation.",
       ingredients: "ngredients: Salicylic acid (higher %), Glycolic acid (low %), Niacinamide, Green tea extract",
       benefits: "Benefits: Clears pores more thoroughly, gently exfoliates dead skin, refines texture over time.",
-      price: 34,
+      price: "950.00",
       image: img("Eudora Pureté Gel Cleanser"),
     },
     {
@@ -92,7 +92,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "An AHA/BHA toner for smoother, brighter skin.",
       ingredients: "Ingredients: Glycolic acid, Lactic acid, Salicylic acid, Niacinamide, Aloe vera",
       benefits: "Benefits: Resurfaces skin, fades dullness and rough texture, helps fade old acne scars and dark spots.",
-      price: 29,
+      price: "1100.00",
       image: img("Eudora Renouveau Exfoliating Toner"),
     },
     {
@@ -100,7 +100,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A high-strength brightening serum.",
       ingredients: "Ingredients: Vitamin C (15–20%), Vitamin E, Ferulic acid, Hyaluronic acid",
       benefits: "Benefits: Fades hyperpigmentation and dullness, boosts collagen, strong antioxidant defense against pollution/sun damage.",
-      price: 29,
+      price: "1350.00",
       image: img("Eudora Éclat Vitamin C Serum"),
     },
     {
@@ -108,7 +108,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A richer daily moisturizer for barrier support.",
       ingredients: "Ingredients: Hyaluronic acid, Ceramides, Vitamin E, Peptides, Squalane",
       benefits: "Benefits: Deep, lasting hydration, repairs barrier stressed by actives like retinol/AHA, keeps skin plump and resilient",
-      price: 29,
+      price: "1450.00",
       image: img("Eudora Velours Moisturizer Glow"),
     },
     {
@@ -116,7 +116,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Daily broad-spectrum protection, formulated for melanin-rich skin.",
       ingredients: "Ingredients: Vitamin C, Vitamin E, Zinc oxide, Niacinamide, Hyaluronic acid",
       benefits: "Benefits: No white cast, prevents further pigmentation, protects skin actively renewing from retinol/acids.",
-      price: 29,
+      price: "1550.00",
       image: img("Eudora Éclat Suncream SPF 50+ skin"),
     },
     {
@@ -124,7 +124,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A targeted cream for the eye area.",
       ingredients: "Ingredients: Peptides, Caffeine, Hyaluronic acid, Vitamin E, Niacinamide",
       benefits: "Benefits: Reduces puffiness and dark circles, firms delicate skin, hydrates without creasing.",
-      price: 29,
+      price: "1238.00",
       image: img("Eudora Contour Eye Cream"),
     },
     {
@@ -132,7 +132,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A fast-acting treatment for occasional breakouts.",
       ingredients: "Ingredients: Salicylic acid, Niacinamide, Tea tree extract, Zinc PCA",
       benefits: "Benefits: Reduces blemishes quickly, controls oil, minimizes scarring risk.",
-      price: 29,
+      price: "1540.00",
       image: img("Eudora Clarté Spot Treatment"),
     },
     {
@@ -140,7 +140,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A setting and refreshing mist.",
       ingredients: "Ingredients: Rosewater, Hyaluronic acid, Niacinamide, Vitamin B5",
       benefits: "Benefits: Refreshes and re-hydrates through the day, helps actives absorb, calms redness from exfoliants.",
-      price: 29,
+      price: "1489.00",
       image: img("Eudora Brume Hydrating Mist"),
     },
     {
@@ -148,7 +148,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "A repairing lip balm with light plumping effect.",
       ingredients: "Ingredients: Shea butter, Peptides, Vitamin E, Hyaluronic acid",
       benefits: "Benefits: Softens, hydrates, and subtly plumps lips, protects against dryness from active skincare routines.",
-      price: 29,
+      price: "400.00",
       image: img("Eudora Baume Lip Treatment"),
     },
   ],
@@ -158,7 +158,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Peptide serum that firms and softens fine lines.",
       ingredients: "",
       benefits: "",
-      price: 48,
+      price: "48",
       image: img("Renewal Nectar Serum"),
     },
     {
@@ -166,7 +166,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Rich night cream targeting early signs of aging.",
       ingredients: "",
       benefits: "",
-      price: 52,
+      price: "52",
       image: img("Aura Lift Cream"),
     },
   ],
@@ -176,7 +176,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Deep-repair facial oil for mature, delicate skin.",
       ingredients: "",
       benefits: "",
-      price: 64,
+      price: "64",
       image: img("Silk Restore Elixir"),
     },
     {
@@ -184,7 +184,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Ceramide-rich balm that rebuilds the skin barrier.",
       ingredients: "",
       benefits: "",
-      price: 58,
+      price: "58",
       image: img("Grace Barrier Balm"),
     },
   ],
@@ -194,7 +194,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Gentle citrus wash that keeps skin fresh, not dry.",
       ingredients: "",
       benefits: "",
-      price: 14,
+      price: "14",
       image: img("Fresh Bloom Body Wash"),
     },
     {
@@ -202,7 +202,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Fast-absorbing lotion for active, everyday days.",
       ingredients: "",
       benefits: "",
-      price: 16,
+      price: "16",
       image: img("Citrus Balance Lotion"),
     },
   ],
@@ -212,7 +212,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Whipped butter that softens without feeling heavy.",
       ingredients: "",
       benefits: "",
-      price: 26,
+      price: "26",
       image: img("Silk Bloom Body Butter"),
     },
     {
@@ -220,7 +220,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Dry oil that leaves a soft, healthy sheen.",
       ingredients: "",
       benefits: "",
-      price: 24,
+      price: "24",
       image: img("Radiance Body Oil"),
     },
   ],
@@ -230,7 +230,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Elasticity-support cream for décolletage & body.",
       ingredients: "",
       benefits: "",
-      price: 36,
+      price: "36",
       image: img("Firming Gold Cream"),
     },
     {
@@ -238,7 +238,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Exfoliating scrub that smooths and refines texture.",
       ingredients: "",
       benefits: "",
-      price: 30,
+      price: "30",
       image: img("Contour Renewal Scrub"),
     },
   ],
@@ -248,7 +248,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Rich, slow-melt balm for very dry mature skin.",
       ingredients: "",
       benefits: "",
-      price: 42,
+      price: "42",
       image: img("Nourish Deep Balm"),
     },
     {
@@ -256,7 +256,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Overnight butter for elbows, knees & heels.",
       ingredients: "",
       benefits: "",
-      price: 40,
+      price: "40",
       image: img("Velvet Repair Butter"),
     },
   ],
@@ -266,7 +266,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Balances oily roots without drying the lengths.",
       ingredients: "",
       benefits: "",
-      price: 15,
+      price: "15",
       image: img("Clarity Shampoo"),
     },
     {
@@ -274,7 +274,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Weightless conditioner for fine, young hair.",
       ingredients: "",
       benefits: "",
-      price: 15,
+      price: "15",
       image: img("Light Bloom Conditioner"),
     },
   ],
@@ -284,7 +284,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Frizz-taming serum with a glassy finish.",
       ingredients: "",
       benefits: "",
-      price: 22,
+      price: "22",
       image: img("Glow Shine Serum"),
     },
     {
@@ -292,7 +292,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Weekly mask for soft, bouncy strands.",
       ingredients: "",
       benefits: "",
-      price: 26,
+      price: "26",
       image: img("Hydra Bloom Mask"),
     },
   ],
@@ -302,7 +302,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Fortifying oil for thinning or brittle strands.",
       ingredients: "",
       benefits: "",
-      price: 32,
+      price: "32",
       image: img("Strength Renewal Oil"),
     },
     {
@@ -310,7 +310,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Builds body back into flattened, tired hair.",
       ingredients: "",
       benefits: "",
-      price: 28,
+      price: "28",
       image: img("Volume Revive Shampoo"),
     },
   ],
@@ -320,7 +320,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Brightens grey and silver tones, no yellowing.",
       ingredients: "",
       benefits: "",
-      price: 34,
+      price: "34",
       image: img("Silver Grace Shampoo"),
     },
     {
@@ -328,7 +328,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Intensive mask for dry, mature hair.",
       ingredients: "",
       benefits: "",
-      price: 38,
+      price: "38",
       image: img("Deep Restore Mask"),
     },
   ],
@@ -338,7 +338,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Light exfoliant for smooth, active feet.",
       ingredients: "",
       benefits: "",
-      price: 12,
+      price: "12",
       image: img("Fresh Step Scrub"),
     },
     {
@@ -346,7 +346,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Refreshing gel for feet on the move.",
       ingredients: "",
       benefits: "",
-      price: 13,
+      price: "13",
       image: img("Cooling Foot Gel"),
     },
   ],
@@ -356,7 +356,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Daily cream that keeps soles soft & smooth.",
       ingredients: "",
       benefits: "",
-      price: 18,
+      price: "18",
       image: img("Soft Bloom Foot Cream"),
     },
     {
@@ -364,7 +364,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Overnight balm for silky, cared-for feet.",
       ingredients: "",
       benefits: "",
-      price: 19,
+      price: "19",
       image: img("Silk Sole Balm"),
     },
   ],
@@ -374,7 +374,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Rich butter for hard-working, tired heels.",
       ingredients: "",
       benefits: "",
-      price: 22,
+      price: "22",
       image: img("Renewal Heel Butter"),
     },
     {
@@ -382,7 +382,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Repair cream for cracks and rough patches.",
       ingredients: "",
       benefits: "",
-      price: 24,
+      price: "24",
       image: img("Golden Sole Repair"),
     },
   ],
@@ -392,7 +392,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Cushioning balm for sensitive mature skin.",
       ingredients: "",
       benefits: "",
-      price: 26,
+      price: "26",
       image: img("Deep Comfort Balm"),
     },
     {
@@ -400,7 +400,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       desc: "Restorative oil blend for very dry feet.",
       ingredients: "",
       benefits: "",
-      price: 28,
+      price: "28",
       image: img("Timeless Sole Elixir"),
     },
   ],
