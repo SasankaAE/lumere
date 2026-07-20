@@ -104,11 +104,61 @@ export const reviewSampleQuotes: Record<string, string> = {
 };
 
 export const salaries = [
-  { level: "Junior", low: 78, high: 98, avg: 88 },
-  { level: "Mid", low: 108, high: 140, avg: 124 },
-  { level: "Senior", low: 148, high: 182, avg: 165 },
-  { level: "Staff / Lead", low: 188, high: 226, avg: 207 },
+  { level: "CEO", low: 300, high: 300, avg: 300 },
+  { level: "Managers", low: 150, high: 150, avg: 150 },
+  { level: "Mid-Level Staff", low: 75, high: 75, avg: 75 },
+  { level: "Support Staff", low: 40, high: 240, avg: 80 },
 ];
+
+/* ------------------------------ salary breakdown ----------------------------- */
+export interface SalaryBreakdownItem {
+  role: string;
+  amount: number; // LKR, monthly
+}
+
+export const salaryBreakdown: Record<string, SalaryBreakdownItem[]> = {
+  "CEO": [{ role: "CEO", amount: 300000 }],
+  "Managers": [
+    { role: "Marketing", amount: 150000 },
+    { role: "Operations", amount: 150000 },
+    { role: "Finance", amount: 150000 },
+    { role: "HR", amount: 150000 },
+    { role: "Business Development", amount: 150000 },
+  ],
+  "Mid-Level Staff": [
+    { role: "Digital Marketing", amount: 75000 },
+    { role: "Social Media", amount: 75000 },
+    { role: "Brand Manager", amount: 75000 },
+    { role: "Customer Service", amount: 75000 },
+    { role: "Production", amount: 75000 },
+    { role: "Quality Control", amount: 75000 },
+    { role: "Inventory", amount: 75000 },
+    { role: "Logistics", amount: 75000 },
+    { role: "Procurement", amount: 75000 },
+    { role: "Accountant", amount: 75000 },
+    { role: "Analyst", amount: 75000 },
+    { role: "Payroll", amount: 75000 },
+    { role: "Recruitment", amount: 75000 },
+    { role: "Employee Relations", amount: 75000 },
+    { role: "Performance Mgmt", amount: 75000 },
+    { role: "Admin", amount: 75000 },
+    { role: "Sales & Partnership", amount: 75000 },
+    { role: "Market Research", amount: 75000 },
+    { role: "Product Innovation", amount: 75000 },
+    { role: "Export & Expansion", amount: 75000 },
+  ],
+  "Support Staff": [
+    { role: "Customer Service Assistants", amount: 40000 },
+    { role: "Inventory", amount: 40000 },
+    { role: "Logistics Assistants", amount: 40000 },
+    { role: "Admin", amount: 40000 },
+    { role: "Other 6 Staff", amount: 240000 },
+  ],
+};
+
+export function formatLKR(amount: number): string {
+  return `LKR ${amount.toLocaleString("en-LK")}`;
+}
 
 export const photos = [
   { seed: "meridian-hq", caption: "Austin HQ atrium" },

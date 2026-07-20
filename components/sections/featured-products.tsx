@@ -46,7 +46,7 @@ export function FeaturedProducts() {
                   >
                     <Image
                       src={product.image}
-                      alt={`${product.name}, ${product.tagline}`}
+                      alt={`${product.name}`}
                       fill
                       sizes="(max-width: 768px) 90vw, 320px"
                       className="object-fill"
@@ -64,20 +64,10 @@ export function FeaturedProducts() {
                   <h3 className="font-display text-xl leading-snug">
                     {product.name}
                   </h3>
-                  <span className="whitespace-nowrap font-display text-lg">
-                    {product.price}
-                  </span>
                 </div>
-                <p className="text-sm text-ink-soft">{product.tagline}</p>
                 <p className="mt-1 text-sm leading-relaxed text-ink-soft">
                   {product.description}
                 </p>
-                <div className="mt-4 flex items-center justify-between text-xs text-ink-faint">
-                  <span>{product.volume}</span>
-                  <Button size="sm" variant="secondary">
-                    Add to bag
-                  </Button>
-                </div>
               </div>
             </motion.article>
           ))}

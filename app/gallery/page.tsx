@@ -5,40 +5,40 @@ import { FocusCards } from "@/components/ui/focus-cards";
 export default function GalleryPage() {
   const cards = [
     {
-      title: "Forest Retreat",
-      src: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=3000&auto=format&fit=crop",
+      title: "Luxury Facial Treatment",
+      src: "/images/galleryImages/img1.jpg",
     },
     {
-      title: "Valley Drive",
-      src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3540&auto=format&fit=crop",
+      title: "Skin Consultation",
+      src: "/images/galleryImages/img2.jpg",
     },
     {
-      title: "Sunset Horizon",
-      src: "https://images.unsplash.com/photo-1560184611-ff3e53f00e8f?q=80&w=3540&auto=format&fit=crop",
+      title: "Relaxing Body Massage",
+      src: "/images/galleryImages/img3.jpg",
     },
     {
-      title: "Mountain Peak",
-      src: "https://images.unsplash.com/photo-1571250375062-b4b4bd6b5a9d?q=80&w=3540&auto=format&fit=crop",
+      title: "Body Scrub Therapy",
+      src: "/images/galleryImages/img4.jpg",
     },
     {
-      title: "City Lights",
-      src: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=3540&auto=format&fit=crop",
+      title: "Hair Spa Treatment",
+      src: "/images/galleryImages/img5.jpg",
     },
     {
-      title: "Ocean Waves",
-      src: "https://images.unsplash.com/photo-1439405326854-014607f694d7?q=80&w=3540&auto=format&fit=crop",
+      title: "Luxury Hair Styling",
+      src: "/images/galleryImages/img6.jpg",
     },
     {
-      title: "Desert Dunes",
-      src: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=3540&auto=format&fit=crop",
+      title: "Premium Foot Spa",
+      src: "/images/galleryImages/img7.jpg",
     },
     {
-      title: "Autumn Path",
-      src: "https://images.unsplash.com/photo-1507371341162-763b5e419408?q=80&w=3540&auto=format&fit=crop",
+      title: "Pedicure & Foot Care",
+      src: "/images/galleryImages/img8.jpg",
     },
     {
-      title: "Winter Cabin",
-      src: "https://images.unsplash.com/photo-1517299321609-52687d1bc55a?q=80&w=3540&auto=format&fit=crop",
+      title: "Premium Beauty Product DisplayWinter Cabin",
+      src: "/images/galleryImages/img9.jpg",
     },
   ];
 

@@ -74,7 +74,7 @@ export default function CompanyProfile() {
 
       {/* ---- header / live status bar ---- */}
       <div
-        className="sticky top-0 z-20 backdrop-blur px-5 md:px-10 py-4 flex flex-wrap items-center gap-4 justify-between"
+        className="sticky top-0 z-20 backdrop-blur px-5 md:px-10 py-3 flex flex-wrap items-center gap-5 justify-between"
         style={{ background: "#FBF7F0D9", borderBottom: `1px solid ${C.line}` }}
       >
         <div className="flex items-center gap-3">
@@ -136,12 +136,6 @@ export default function CompanyProfile() {
           style={{ top: 73, width: 220, height: "calc(100vh - 73px)" }}
         >
           <div className="px-4 py-8 h-full" style={{ borderRight: `1px solid ${C.line}` }}>
-            <div
-              className="text-xs mb-4 px-2"
-              style={{ color: C.muted, fontFamily: mono, letterSpacing: "0.08em" }}
-            >
-              SECTIONS
-            </div>
             <div ref={navRef} className="relative flex flex-col gap-1">
               <span
                 className="absolute left-0 w-[2px] rounded-full transition-all duration-300 ease-out"
@@ -219,7 +213,7 @@ export default function CompanyProfile() {
             style={{ color: C.muted, fontFamily: mono }}
           >
             <Sparkles size={12} color={C.cyan} />
-            Meridian Cloud Systems · company profile snapshot
+            Eudora Admin Systems · company profile snapshot
           </div>
         </div>
       </div>

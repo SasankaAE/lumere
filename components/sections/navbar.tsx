@@ -7,7 +7,7 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "framer-motion";
-import { Menu, ShoppingBag, X } from "lucide-react";
+import { Menu, User, X } from "lucide-react";
 import { navLinks } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -65,19 +65,20 @@ export function Navbar() {
           </ul>
 
           <div className="flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="hidden sm:inline-flex"
-              aria-label="View cart, 0 items"
-            >
-              <ShoppingBag className="h-4 w-4" aria-hidden="true" />
-              <span>0</span>
-            </Button>
-            <Link href= "/shop">
-            <Button size="sm" className="hidden sm:inline-flex">
-              Shop Now
-            </Button>
+            <Link href="/account">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="hidden sm:inline-flex"
+                aria-label="View cart, 0 items"
+              >
+                <User className="h-4 w-4" aria-hidden="true" />
+              </Button>
+            </Link>
+            <Link href="/shop">
+              <Button size="sm" className="hidden sm:inline-flex">
+                Shop Now
+              </Button>
             </Link>
             <button
               onClick={() => setOpen(true)}
