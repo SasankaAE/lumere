@@ -175,6 +175,16 @@ function ProductImage({
   );
 }
 
+const TAG_COLORS: Record<string, { bg: string; color: string; border: string }> = {
+  Morning: { bg: "#E6F4EA", color: "#2E7D46", border: "#2E7D46" },
+  Evening: { bg: "#E5EEFB", color: "#2A5DB0", border: "#2A5DB0" },
+  Anytime: { bg: "#FFFFFF", color: "#6B5E52", border: "#D8CFC3" },
+};
+
+function getTagStyle(tag: string) {
+  return TAG_COLORS[tag] ?? TAG_COLORS.Anytime;
+}
+
 export default function BeautyCategories() {
   const [category, setCategory] = useState(CATEGORIES[0].id);
   const [tier, setTier] = useState(TIERS[0].id);
@@ -323,10 +333,17 @@ export default function BeautyCategories() {
             <CardContent className="pt-0">
               <Badge
                 variant="secondary"
-                className="text-[10px] font-normal"
+                className="text-[10px] font-normal mr-3"
                 style={{ background: activeTier.soft, color: activeTier.color }}
               >
                 {activeTier.label}
+              </Badge>
+              <Badge
+                variant="secondary"
+                className="text-[10px] font-normal"
+                style={{ background: getTagStyle(String(p.tag)).bg, color: getTagStyle(String(p.tag)).color, borderColor: getTagStyle(String(p.tag)).border }}
+              >
+                {p.tag}
               </Badge>
             </CardContent>
             <CardFooter className="flex items-center justify-between pt-0 ">
