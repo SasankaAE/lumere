@@ -37,7 +37,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       ingredients: "Ingredients: Salicylic acid (low %), Niacinamide, Aloe vera, Green tea extract, Vitamin B5 ",
       benefits: "Benefits: Clears excess oil and impurities, keeps pores clear, soothes redness without over-drying",
       tag:"❤️",
-      price: "990.00",
+      price: "1150.00",
       image: img("Eudora Lumière Cleanser"),
     },
     {
@@ -46,7 +46,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       ingredients: "Ingredients: Witch hazel (alcohol-free), Niacinamide, Aloe vera, Vitamin B3",
       benefits: "Benefits: Balances oil production, minimizes the look of pores, preps skin to absorb the next steps better.",
       tag:"❤️",
-      price: "670.00",
+      price: "950.00",
       image: img("Eudora Rosée Toner"),
     },
     {
@@ -55,7 +55,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       ingredients: "Ingredients: Niacinamide, Vitamin C, Zinc PCA, Licorice root extract",
       benefits: "Benefits: Fades post-acne marks, brightens dull patches, controls shine, calms active breakouts",
       tag:"❤️",
-      price: "1000.00",
+      price: "1500.00",
       image: img("Eudora Clarté Serum"),
     },
     {
@@ -64,7 +64,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       ingredients: "Ingredients: Hyaluronic acid, Vitamin E, Niacinamide, Centella asiatica, Ceramides",
       benefits: "Benefits: Deep hydration without heaviness, strengthens the skin barrier, calms irritation",
       tag:"❤️",
-      price: "950.00",
+      price: "1250.00",
       image: img("Eudora Velours Moisturizer"),
     },
     {
@@ -73,7 +73,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       ingredients: "Ingredients: Vitamin C, Vitamin E, Zinc oxide, Niacinamide, Hyaluronic acid",
       benefits: "Benefits: No white cast, protects against dark spots and sun damage, doubles as light hydration",
       tag:"❤️",
-      price: "1280.00",
+      price: "1890.00",
       image: img("Eudora Éclat Suncream SPF 50"),
     },
     {
@@ -82,7 +82,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       ingredients: "Ingredients: Shea butter, Vitamin E, Hyaluronic acid, Sunflower seed oil",
       benefits: "Benefits: Softens and protects lips, locks in moisture, light natural sheen.",
       tag:"❤️",
-      price: "270.00",
+      price: "450.00",
       image: img("Eudora Baume Lip Balm"),
     },
   ],
@@ -177,7 +177,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Cleanses without disturbing the barrier — important once retinol is in the routine.",
       tag:"Morning",
       price: "48",
-      image: img("Renewal Nectar Serum"),
+      image: img("⁠Eudora Pureté Cleanser"),
     },
     {
       name: "⁠⁠Eudora Éclat Vitamin C Serum A potent morning brightening serum.",
@@ -186,7 +186,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Fades dark spots and dullness, boosts collagen production, antioxidant shield against daily sun/pollution damage.",
       tag:"Morning",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("⁠Eudora Éclat Vitamin"),
     },
     {
       name: "Eudora Velours Day Moisturizer A collagen-supporting daytime moisturizer.",
@@ -195,7 +195,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Firms and plumps skin, locks in hydration, supports elasticity through the day.",
       tag:"Morning",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("Eudora Velours Day Moisturizer"),
     },
     {
       name: "⁠Eudora Éclat Suncream SPF 50+ Daily broad-spectrum protection for melanin-rich skin.",
@@ -204,7 +204,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: No white cast, prevents pigmentation and photoaging, essential protection while using active ingredients.",
       tag:"Morning",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("⁠Eudora Éclat Suncream SPF 50+ Daily"),
     },
     {
       name: "⁠Eudora Contour Eye Cream A firming, brightening eye treatment.",
@@ -213,7 +213,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Reduces puffiness and dark circles, firms the delicate eye area, hydrates without creasing.",
       tag:"Morning",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("⁠Eudora Contour Eye Cream A firming"),
     },
     {
       name: "Eudora Nuit Cleansing Balm A richer evening cleanser to remove makeup/SPF.",
@@ -222,7 +222,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Deep, gentle cleanse that preps skin without over-drying before retinol.",
       tag:"Evening",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("Eudora Nuit Cleansing Balm"),
     },
     {
       name: "Eudora Renouveau Retinol Serum An advanced nightly retinol treatment.",
@@ -231,7 +231,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Accelerates cell renewal, smooths fine lines and wrinkles, improves texture and tone — no vitamin C, so it stays stable and gentle.",
       tag:"Evening",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("Eudora Renouveau Retinol Serum"),
     },
     {
       name: "⁠Eudora Fermeté Collagen Serum A firming serum focused on elasticity.",
@@ -240,7 +240,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Restores firmness and bounce, supports skin structure, reduces sagging over time — layers safely under retinol.",
       tag:"Evening",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("⁠Eudora Fermeté Collagen Serum"),
     },
     {
       name: "⁠Eudora Nuit Repair Cream A rich overnight moisturizer to support barrier recovery.",
@@ -249,7 +249,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Repairs and hydrates overnight, buffers any retinol irritation, keeps skin resilient.",
       tag:"Evening",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("⁠Eudora Nuit Repair Cream moisturizer"),
     },
     {
       name: "⁠Eudora Renaissance Overnight Mask A weekly intensive renewal mask.",
@@ -258,7 +258,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Deep repair and firming boost, wakes up to smoother, plumper skin.",
       tag:"Evening",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("⁠Eudora Renaissance Overnight Mask"),
     },
     {
       name: "⁠Eudora Renouveau Exfoliating Toner A gentle AHA/BHA toner (use only on non-retinol nights).",
@@ -267,7 +267,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Resurfaces skin, fades texture and dark spots, preps skin for better absorption.",
       tag:"Anytime",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("⁠Eudora Renouveau Exfoliating Toner AHA/BHA"),
     },
     {
       name: "Eudora Baume Lip Treatment A repairing, plumping lip balm.",
@@ -276,7 +276,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       benefits: "Benefits: Deeply nourishes, softens fine lines around lips, subtle plumping effect.",
       tag:"Anytime",
       price: "52",
-      image: img("Aura Lift Cream"),
+      image: img("Eudora Baume Lip Treatment lip balm"),
     },
   ],
   "skin-timeless": [
