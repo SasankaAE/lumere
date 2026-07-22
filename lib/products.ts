@@ -308,7 +308,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"❤️",
-      price: "950.00",
+      price: "1550.00",
       image: img("Eudora Pureté Gel Cleanser"),
     },
     {
@@ -321,7 +321,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"❤️",
-      price: "1100.00",
+      price: "1650.00",
       image: img("Eudora Renouveau Exfoliating Toner"),
     },
     {
@@ -334,7 +334,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"❤️",
-      price: "1350.00",
+      price: "1990.00",
       image: img("Eudora Éclat Vitamin C Serum"),
     },
     {
@@ -347,7 +347,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"❤️",
-      price: "1450.00",
+      price: "2100.00",
       image: img("Eudora Velours Moisturizer Glow"),
     },
     {
@@ -360,7 +360,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"❤️",
-      price: "1550.00",
+      price: "2300.00",
       image: img("Eudora Éclat Suncream SPF 50+ skin"),
     },
     {
@@ -373,7 +373,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"❤️",
-      price: "1238.00",
+      price: "1690.00",
       image: img("Eudora Contour Eye Cream"),
     },
     {
@@ -386,7 +386,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"❤️",
-      price: "1540.00",
+      price: "1850.00",
       image: img("Eudora Clarté Spot Treatment"),
     },
     {
@@ -399,7 +399,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"❤️",
-      price: "1489.00",
+      price: "2550.00",
       image: img("Eudora Brume Hydrating Mist"),
     },
     {
@@ -412,7 +412,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"❤️",
-      price: "400.00",
+      price: "750.00",
       image: img("Eudora Baume Lip Treatment"),
     },
   ],
@@ -427,7 +427,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Morning",
-      price: "48",
+      price: "1950.00",
       image: img("⁠Eudora Pureté Cleanser"),
     },
     {
@@ -440,7 +440,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Morning",
-      price: "52",
+      price: "2800.00",
       image: img("⁠Eudora Éclat Vitamin"),
     },
     {
@@ -453,7 +453,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Morning",
-      price: "52",
+      price: "2115.00",
       image: img("Eudora Velours Day Moisturizer"),
     },
     {
@@ -466,7 +466,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Morning",
-      price: "52",
+      price: "2300.00",
       image: img("⁠Eudora Éclat Suncream SPF 50+ Daily"),
     },
     {
@@ -479,7 +479,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Morning",
-      price: "52",
+      price: "2550.00",
       image: img("⁠Eudora Contour Eye Cream A firming"),
     },
     {
@@ -492,7 +492,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Evening",
-      price: "52",
+      price: "3100.00",
       image: img("Eudora Nuit Cleansing Balm"),
     },
     {
@@ -505,7 +505,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Evening",
-      price: "52",
+      price: "3750.00",
       image: img("Eudora Renouveau Retinol Serum"),
     },
     {
@@ -518,7 +518,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Evening",
-      price: "52",
+      price: "2650.00",
       image: img("⁠Eudora Fermeté Collagen Serum"),
     },
     {
@@ -531,7 +531,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Evening",
-      price: "52",
+      price: "2990.00",
       image: img("⁠Eudora Nuit Repair Cream moisturizer"),
     },
     {
@@ -544,7 +544,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Evening",
-      price: "52",
+      price: "1700.00",
       image: img("⁠Eudora Renaissance Overnight Mask"),
     },
     {
@@ -557,7 +557,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Anytime",
-      price: "52",
+      price: "1850.00",
       image: img("⁠Eudora Renouveau Exfoliating Toner AHA/BHA"),
     },
     {
@@ -570,7 +570,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Anytime",
-      price: "52",
+      price: "750.00",
       image: img("Eudora Baume Lip Treatment lip balm"),
     },
   ],
@@ -585,7 +585,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "Normal: Ceramides, Niacinamide, Aloe vera, Glycerin — balanced, gentle daily cleanse.",
       combination:"Combination: Niacinamide, Ceramides, Green tea extract, Glycerin — balances T-zone oil while keeping cheeks comfortable.",
       tag:"Morning",
-      price: "64",
+      price: "1990.00",
       image: img("⁠Eudora Pureté Cleanser — by skin type"),
     },
     {
@@ -598,7 +598,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Morning",
-      price: "58",
+      price: "3950.00",
       image: img("Eudora Éclat Vitamin C Serum Hyaluronic acid"),
     },
     {
@@ -611,7 +611,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "Normal: Marine collagen, Hyaluronic acid, Peptides, Ceramides — balanced daily firming.",
       combination:"Combination: Peptides, Niacinamide, Hyaluronic acid, Ceramides — lightweight in feel, still firming.",
       tag:"Morning",
-      price: "58",
+      price: "2200.00",
       image: img("Eudora Fermeté Day Moisturizer — by skin type"),
     },
     {
@@ -624,7 +624,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Morning",
-      price: "58",
+      price: "1995.00",
       image: img("Eudora Éclat Suncream SPF 50+ Hyaluronic acid"),
     },
     {
@@ -637,7 +637,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Morning",
-      price: "58",
+      price: "1250.00",
       image: img("⁠Eudora Contour Eye Cream Hyaluronic acid"),
     },
     {
@@ -650,7 +650,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Evening",
-      price: "58",
+      price: "1700.00",
       image: img("⁠Eudora Nuit Cleansing Balm Aloe vera"),
     },
     {
@@ -663,7 +663,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Evening",
-      price: "58",
+      price: "2650.00",
       image: img("Eudora Renouveau Retinol Serum acid"),
     },
     {
@@ -676,7 +676,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Evening",
-      price: "58",
+      price: "2590.00",
       image: img("Eudora Fermeté Collagen Serum asiatica"),
     },
     {
