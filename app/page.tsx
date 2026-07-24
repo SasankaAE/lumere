@@ -10,7 +10,6 @@ import { FAQ } from "@/components/sections/faq";
 import { Newsletter } from "@/components/sections/newsletter";
 import { InstagramGallery } from "@/components/sections/instagram-gallery";
 import { Footer } from "@/components/sections/footer";
-import MidSeasonOfferPopup from "@/components/sale/page";
 
 export default function Home() {
   return (
@@ -27,11 +26,6 @@ export default function Home() {
         <FAQ />
         <Newsletter />
         <InstagramGallery />
-        <MidSeasonOfferPopup
-          endsAt="2026-08-03T23:59:59+05:30"
-          discountLabel="Up to 30% off"
-          ctaHref="/sale"
-        />
       </main>
       <Footer />
     </>

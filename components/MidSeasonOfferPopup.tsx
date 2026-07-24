@@ -11,16 +11,23 @@ import Link from "next/link";
 /**
  * MidSeasonOfferPopup
  * -----------------------------------------------------------------------
- * A large, split-layout promo dialog (image left, offer + countdown
- * right) in a lavender + beige palette to match the mid-season
- * campaign artwork. Opens automatically on page load, once per
- * browser session.
+ * A large, split-layout promo dialog (image on top / left, offer +
+ * countdown below / right) in a lavender + beige palette. Opens
+ * automatically on page load, once per browser session.
+ *
+ * Layout notes:
+ *  - Mobile-first: stacks as a single column (image on top, content
+ *    below) using flex, not a breakpoint-only grid — this avoids the
+ *    "still side-by-side on a narrow phone" bug that comes from
+ *    relying on `sm:` alone when a viewport meta tag is missing or a
+ *    device reports an unexpected width.
+ *  - The whole dialog is capped at 92vh with internal scroll, so on
+ *    short screens the countdown / button are never clipped — you
+ *    scroll the content instead of losing it off the edge.
  *
  * Setup:
  *   1. Place the campaign image at /public/images/mid-season-offer.png
- *      (the file you generated works as-is).
- *   2. Make sure shadcn's dialog + button exist:
- *        npx shadcn@latest add dialog button
+ *   2. npx shadcn@latest add dialog button   (if not already present)
  *   3. Render once near the top of your layout or homepage:
  *
  *   <MidSeasonOfferPopup
@@ -68,12 +75,12 @@ function getTimeLeft(target: number): TimeLeft {
 function TimeUnit({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center gap-1">
-      <div className="flex h-14 w-14 items-center justify-center rounded-lg border border-[#B9A9D9]/50 bg-white/70 shadow-sm sm:h-16 sm:w-16">
-        <span className="font-serif text-2xl tabular-nums text-[#5B4B7A] sm:text-3xl">
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-[#B9A9D9]/50 bg-white/70 shadow-sm xs:h-14 xs:w-14 sm:h-16 sm:w-16">
+        <span className="font-display text-xl tabular-nums text-[#5B4B7A] xs:text-2xl sm:text-3xl">
           {String(value).padStart(2, "0")}
         </span>
       </div>
-      <span className="text-[10px] uppercase tracking-[0.15em] text-[#6B5D52]/60">
+      <span className="font-body text-[9px] uppercase tracking-[0.15em] text-[#6B5D52]/60 sm:text-[10px]">
         {label}
       </span>
     </div>
@@ -83,7 +90,6 @@ function TimeUnit({ value, label }: { value: number; label: string }) {
 export function MidSeasonOfferPopup({
   endsAt,
   discountLabel = "Up to 40% off",
-  ctaHref = "/sale",
   imageSrc = "/images/mid-season-offer.jpg",
   storageKey = "eudora_mid_season_popup_seen",
 }: MidSeasonOfferPopupProps) {
@@ -133,7 +139,7 @@ export function MidSeasonOfferPopup({
       <AnimatePresence>
         {open && (
           <DialogContent
-            className="max-w-3xl overflow-hidden border border-[#B9A9D9]/30 bg-[#FBF6ED] p-0 text-[#4A3F35] shadow-[0_20px_60px_-15px_rgba(139,123,168,0.35)] sm:rounded-2xl"
+            className="w-[95vw] max-w-[95vw] overflow-hidden border border-[#B9A9D9]/30 bg-[#FBF6ED] p-0 text-[#4A3F35] shadow-[0_20px_60px_-15px_rgba(139,123,168,0.35)] sm:max-w-2xl sm:rounded-2xl md:max-w-4xl lg:max-w-6xl"
             showCloseButton={false}
           >
             <motion.div
@@ -141,62 +147,68 @@ export function MidSeasonOfferPopup({
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.96, y: 12 }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="relative grid grid-cols-1 sm:grid-cols-2"
+              className="relative flex max-h-[92vh] flex-col overflow-y-auto md:flex-row md:overflow-hidden"
             >
               <button
                 onClick={close}
                 aria-label="Close offer"
-                className="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/70 text-[#5B4B7A] transition hover:bg-white"
+                className="absolute right-3 top-3 z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/80 text-[#5B4B7A] transition hover:bg-white sm:right-4 sm:top-4"
               >
                 <X className="h-4 w-4" />
               </button>
 
-              {/* Image half */}
-              <div className="relative h-56 sm:h-full">
+              {/* Image half — full width on mobile, left column from md up */}
+              <div className="relative h-48 w-full shrink-0 xs:h-56 sm:h-72 md:h-auto md:w-1/2">
                 <Image
                   src={imageSrc}
                   alt="Eudora mid-season offer — up to 40% off"
                   fill
-                  sizes="(max-width: 640px) 100vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                   priority
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#FBF6ED]/40 via-transparent to-transparent sm:bg-gradient-to-r sm:from-transparent sm:via-transparent sm:to-[#FBF6ED]/10" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#FBF6ED]/50 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-[#FBF6ED]/10" />
               </div>
 
-              {/* Content half */}
-              <div className="relative flex flex-col items-center justify-center bg-gradient-to-b from-[#F3EAF7] to-[#FBF6ED] px-8 py-10 text-center">
-                <span className="mb-3 rounded-full border border-[#B9A9D9]/60 bg-white/60 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-[#7A6A9A]">
+              {/* Content half — below image on mobile, right column from md up */}
+              <div className="relative flex w-full flex-col items-center justify-center bg-gradient-to-b from-[#F3EAF7] to-[#FBF6ED] px-6 py-8 text-center sm:px-10 sm:py-10 md:w-1/2 md:px-12">
+                <span className="font-body mb-3 rounded-full border border-[#B9A9D9]/60 bg-white/60 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-[#7A6A9A] sm:text-[11px]">
                   Mid-Season Offer
                 </span>
 
-                <h2 className="font-serif text-[28px] leading-tight text-[#5B4B7A] sm:text-[32px]">
+                <h2 className="font-display text-2xl leading-tight text-[#5B4B7A] sm:text-[28px] md:text-[32px]">
                   {discountLabel}
                 </h2>
-                <p className="mt-2 max-w-xs text-sm text-[#6B5D52]/80">
+                <p className="font-body mt-2 max-w-xs text-xs text-[#6B5D52]/80 sm:text-sm">
                   Across Teen Angels, Divine Feminity, Golden Aura &amp;
                   Timeless Grace — while the season lasts.
                 </p>
 
                 {timeLeft && !timeLeft.expired ? (
-                  <div className="mt-6 flex items-center gap-3">
+                  <div className="mt-6 flex items-center justify-center gap-2 xs:gap-3 sm:mt-8 sm:gap-4">
                     <TimeUnit value={timeLeft.days} label="Days" />
-                    <span className="pb-4 text-[#B9A9D9]">:</span>
+                    <span className="pb-5 text-lg text-[#B9A9D9] sm:pb-6 sm:text-2xl">
+                      :
+                    </span>
                     <TimeUnit value={timeLeft.hours} label="Hrs" />
-                    <span className="pb-4 text-[#B9A9D9]">:</span>
+                    <span className="pb-5 text-lg text-[#B9A9D9] sm:pb-6 sm:text-2xl">
+                      :
+                    </span>
                     <TimeUnit value={timeLeft.minutes} label="Min" />
-                    <span className="pb-4 text-[#B9A9D9]">:</span>
+                    <span className="pb-5 text-lg text-[#B9A9D9] sm:pb-6 sm:text-2xl">
+                      :
+                    </span>
                     <TimeUnit value={timeLeft.seconds} label="Sec" />
                   </div>
                 ) : (
-                  <p className="mt-6 text-sm text-[#6B5D52]/60">
+                  <p className="font-body mt-6 text-sm text-[#6B5D52]/60">
                     This offer has ended.
                   </p>
                 )}
 
-                <Link href={ctaHref} onClick={close} className="mt-8 w-full">
+                <Link href="/shop" onClick={close} className="mt-8 w-full">
                   <Button
-                    className="w-full bg-[#8B7BA8] text-white hover:bg-[#7A6A9A]"
+                    className="font-body w-full whitespace-nowrap bg-[#8B7BA8] text-white hover:bg-[#7A6A9A]"
                     size="lg"
                   >
                     Shop the offer
@@ -205,7 +217,7 @@ export function MidSeasonOfferPopup({
 
                 <button
                   onClick={close}
-                  className="mt-3 text-xs text-[#6B5D52]/50 underline-offset-4 hover:text-[#6B5D52] hover:underline"
+                  className="font-body mt-3 text-xs text-[#6B5D52]/50 underline-offset-4 hover:text-[#6B5D52] hover:underline"
                 >
                   Maybe later
                 </button>

@@ -2,8 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Fraunces, Manrope, Geist } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import MidSeasonOfferPopup from "@/components/MidSeasonOfferPopup";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -83,7 +85,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn(fraunces.variable, manrope.variable, "font-sans", geist.variable)}>
       <head>
-        <link rel="icon" type="image/jpg" href="images/young-woman.jpg"/>
+        <link rel="icon" type="image/jpg" href="images/young-woman.jpg" />
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
@@ -97,6 +99,13 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+
+        <MidSeasonOfferPopup
+          endsAt="2026-08-03T23:59:59+05:30"
+          discountLabel="Up to 40% off"
+          ctaHref="/sale"
+        />
+
         {children}
       </body>
     </html>
