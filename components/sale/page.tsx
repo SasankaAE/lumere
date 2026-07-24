@@ -67,13 +67,13 @@ function getTimeLeft(target: number): TimeLeft {
 
 function TimeUnit({ value, label }: { value: number; label: string }) {
   return (
-    <div className="flex flex-col items-center gap-2">
-      <div className="flex h-20 w-20 items-center justify-center rounded-xl border border-[#B9A9D9]/50 bg-white/70 shadow-sm sm:h-24 sm:w-24">
-        <span className="font-serif text-4xl tabular-nums text-[#5B4B7A] sm:text-5xl">
+    <div className="flex flex-col items-center gap-1">
+      <div className="flex h-14 w-14 items-center justify-center rounded-lg border border-[#B9A9D9]/50 bg-white/70 shadow-sm sm:h-16 sm:w-16">
+        <span className="font-serif text-2xl tabular-nums text-[#5B4B7A] sm:text-3xl">
           {String(value).padStart(2, "0")}
         </span>
       </div>
-      <span className="text-xs uppercase tracking-[0.15em] text-[#6B5D52]/60">
+      <span className="text-[10px] uppercase tracking-[0.15em] text-[#6B5D52]/60">
         {label}
       </span>
     </div>
@@ -133,7 +133,7 @@ export function MidSeasonOfferPopup({
       <AnimatePresence>
         {open && (
           <DialogContent
-            className="max-w-5xl overflow-hidden border border-[#B9A9D9]/30 bg-[#FBF6ED] p-0 text-[#4A3F35] shadow-[0_20px_60px_-15px_rgba(139,123,168,0.35)] sm:rounded-2xl"
+            className="max-w-3xl overflow-hidden border border-[#B9A9D9]/30 bg-[#FBF6ED] p-0 text-[#4A3F35] shadow-[0_20px_60px_-15px_rgba(139,123,168,0.35)] sm:rounded-2xl"
             showCloseButton={false}
           >
             <motion.div
@@ -152,7 +152,7 @@ export function MidSeasonOfferPopup({
               </button>
 
               {/* Image half */}
-              <div className="relative h-64 sm:h-[560px]">
+              <div className="relative h-56 sm:h-full">
                 <Image
                   src={imageSrc}
                   alt="Eudora mid-season offer — up to 40% off"
@@ -165,7 +165,7 @@ export function MidSeasonOfferPopup({
               </div>
 
               {/* Content half */}
-              <div className="relative flex flex-col items-center justify-center bg-gradient-to-b from-[#F3EAF7] to-[#FBF6ED] px-10 py-12 text-center sm:px-12">
+              <div className="relative flex flex-col items-center justify-center bg-gradient-to-b from-[#F3EAF7] to-[#FBF6ED] px-8 py-10 text-center">
                 <span className="mb-3 rounded-full border border-[#B9A9D9]/60 bg-white/60 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-[#7A6A9A]">
                   Mid-Season Offer
                 </span>
@@ -179,13 +179,13 @@ export function MidSeasonOfferPopup({
                 </p>
 
                 {timeLeft && !timeLeft.expired ? (
-                  <div className="mt-8 flex items-center gap-3 sm:gap-4">
+                  <div className="mt-6 flex items-center gap-3">
                     <TimeUnit value={timeLeft.days} label="Days" />
-                    <span className="pb-6 text-xl text-[#B9A9D9] sm:text-2xl">:</span>
+                    <span className="pb-4 text-[#B9A9D9]">:</span>
                     <TimeUnit value={timeLeft.hours} label="Hrs" />
-                    <span className="pb-6 text-xl text-[#B9A9D9] sm:text-2xl">:</span>
+                    <span className="pb-4 text-[#B9A9D9]">:</span>
                     <TimeUnit value={timeLeft.minutes} label="Min" />
-                    <span className="pb-6 text-xl text-[#B9A9D9] sm:text-2xl">:</span>
+                    <span className="pb-4 text-[#B9A9D9]">:</span>
                     <TimeUnit value={timeLeft.seconds} label="Sec" />
                   </div>
                 ) : (
