@@ -98,30 +98,30 @@ export const routineSteps = [
   {
     time: "AM",
     step: "01",
-    name: "Botanical Cleansing Oil",
+    name: "Eudora Lumière Cleanser",
     duration: "60 sec",
-    detail: "Massage onto dry skin, emulsify with water, rinse.",
+    detail: "A gentle daily cleanser that clears without stripping",
   },
   {
     time: "AM",
     step: "02",
-    name: "Dew Drop Essence",
+    name: "Eudora Rosée Toner",
     duration: "30 sec",
-    detail: "Press into damp skin with palms until fully absorbed.",
+    detail: "A light toning mist to balance and prep skin.",
   },
   {
     time: "PM",
     step: "03",
-    name: "Bio-Renew Serum",
+    name: "Eudora Velours Moisturizer",
     duration: "45 sec",
-    detail: "Apply three drops, focusing on areas of concern.",
+    detail: "A lightweight, oil-free daily moisturizer.",
   },
   {
     time: "PM",
     step: "04",
-    name: "Cloud Barrier Cream",
+    name: "Eudora Éclat Suncream SPF 50",
     duration: "30 sec",
-    detail: "Seal the routine with a generous layer, neck included.",
+    detail: "Daily, invisible-finish sun protection.",
   },
 ] as const;
 
