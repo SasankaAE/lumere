@@ -42,22 +42,12 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold">Company</h3>
-            <ul className="flex flex-col gap-3 text-sm text-ink-soft">
-              <li><a href="#" className="transition-colors hover:text-ink">About</a></li>
-              <li><a href="#" className="transition-colors hover:text-ink">Sustainability</a></li>
-              <li><a href="#" className="transition-colors hover:text-ink">Careers</a></li>
-              <li><a href="#" className="transition-colors hover:text-ink">Press</a></li>
-            </ul>
-          </div>
-
-          <div>
             <h3 className="mb-4 text-sm font-semibold">Support</h3>
             <ul className="flex flex-col gap-3 text-sm text-ink-soft">
               <li><a href="#faq" className="transition-colors hover:text-ink">FAQ</a></li>
-              <li><a href="#" className="transition-colors hover:text-ink">Shipping &amp; Returns</a></li>
-              <li><a href="#" className="transition-colors hover:text-ink">Contact</a></li>
-              <li><a href="#" className="transition-colors hover:text-ink">Privacy Policy</a></li>
+              <li><a href="/shipping-returns" className="transition-colors hover:text-ink">Shipping &amp; Returns</a></li>
+              <li><a href="/contact" className="transition-colors hover:text-ink">Contact</a></li>
+              <li><a href="/privacy-policy" className="transition-colors hover:text-ink">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
