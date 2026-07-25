@@ -689,7 +689,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "Normal: Ceramides, Peptides, Squalane, Hyaluronic acid — balanced overnight repair.",
       combination:"Combination: Ceramides, Niacinamide, Peptides, Hyaluronic acid — repairs barrier evenly across zones.",
       tag:"Evening",
-      price: "58",
+      price: "16,500.00",
       image: img("⁠⁠Eudora Nuit Repair Cream — by skin type"),
     },
     {
@@ -702,7 +702,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Evening",
-      price: "58",
+      price: "1424.00",
       image: img("⁠Eudora Renaissance Overnight Mask skin"),
     },
     {
@@ -715,7 +715,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Anytime",
-      price: "58",
+      price: "2495.00",
       image: img("Eudora Renouveau Exfoliating Toner acid"),
     },
     {
@@ -728,7 +728,7 @@ export const PRODUCTS: Record<ProductKey, Product[]> = {
       normal: "",
       combination:"",
       tag:"Anytime",
-      price: "58",
+      price: "350.00",
       image: img("Eudora Baume Lip Treatment lines"),
     },
   ],
