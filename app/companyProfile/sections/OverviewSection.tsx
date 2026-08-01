@@ -83,7 +83,7 @@ export default function OverviewSection({ setRef }: OverviewSectionProps) {
       <SectionLabel id="SEC-01" title="Overview" icon={Activity} />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
-        <StatChip icon={Calendar} label="Founded" value="2015" />
+        <StatChip icon={Calendar} label="Founded" value="2026" />
         <StatChip icon={MapPin} label="HQ" value="Austin, TX" />
         <StatChip icon={Users} label="Employees" value="1,240" />
         <StatChip icon={Building2} label="Industry" value="Cloud infrastructure" />
