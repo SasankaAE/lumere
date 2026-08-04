@@ -101,7 +101,7 @@ export default function RootLayout({
         </a>
 
         <MidSeasonOfferPopup
-          endsAt="2026-08-03T23:59:59+05:30"
+          endsAt="2026-09-30T23:59:59+05:30"
           discountLabel="Up to 40% off"
           ctaHref="/sale"
         />
